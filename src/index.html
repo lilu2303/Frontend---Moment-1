@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="styles.css">
     <title>Moment 1 - Frontend</title>
 </head>
+
 <body>
-<header>
-        
+    <header>
+
         <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="Logotyp"></a></div>
         <!--Meny knapp för att öppna mobilmenyn-->
         <button class="menu-btn open" id="open-menu">
@@ -32,60 +33,44 @@
             <button class="menu-btn close" id="close-menu">
                 <span class="menu-icon">
                     <span class="bars cross1"></span>
-                    <span class="bars cross2"></span>   
+                    <span class="bars cross2"></span>
                 </span>
                 <span class="menu-text">Stäng</span>
             </button>
-        <ul>
-            <li><a href="index.html">STARTSIDA</a></li>
-            <li><a href="pictures.html">BILDER</a></li>
-            <li><a href="assignment.html">UPPGIFTSBESKRIVNING</a></li>
-        </ul>
-    </nav>
-</header>
+            <ul>
+                <li><a href="index.html">STARTSIDA</a></li>
+                <li><a href="pictures.html">BILDER</a></li>
+                <li><a href="assignment.html">UPPGIFTSBESKRIVNING</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-<picture>
-    <source media="(min-width: 1521px)" srcset="images/stor_bild.jpg">
-    <source media="(min-width: 801px) and (max-width: 1520px)" srcset="images/mellan_bild.jpg">
-    <source media="(max-width: 800px)" srcset="images/liten_bild.jpg">
-    <img src="images/stor_bild.jpg" alt="En bild på trädgård täckt med snö när solen skiner">
-  </picture>
+    <picture>
+        <source media="(min-width: 1521px)" srcset="images/stor_bild.jpg">
+        <source media="(min-width: 801px) and (max-width: 1520px)" srcset="images/mellan_bild.jpg">
+        <source media="(max-width: 800px)" srcset="images/liten_bild.jpg">
+        <img src="images/stor_bild.jpg" alt="En bild på trädgård täckt med snö när solen skiner">
+    </picture>
 
     <div class="products">
-        <h1>Senaste produkterna</h1>
-    
-        <a href="images/frilaggning01.png" target="_blank">
-            <img src="images/frilaggning01.png" alt="En vit och svart mugg">
-        </a>
-    
-        <a href="images/frilaggning03.png" target="_blank">
-            <img src="images/frilaggning03.png" alt="En bild på en Apple tv">
-        </a>
-    
-        <a href="images/frilaggning02.png" target="_blank">
-            <img src="images/frilaggning02.png" alt="En bild på en fjärkontroll">
-        </a>
-    </div>
+        <h1>Information om uppgiften</h1>
+        <p></p>
 
-    <section class="backgroundpicture">
-        <img src="images/background.jpg" alt="bild på tre hus med en grön genomskinlig bakgrundsfärg">
-        <div class="backgroundtext"> <h1>Webbutvecklingsprogrammet <br>
-        Mittuniversitetet</h1></div>
-        <div class="button-container">
-        <button type="button">Sök här!</button>
+  
     </div>
     </section>
     <br>
-    
 
-</div>
 
-<footer>
-    <p>Laborationsuppgift för kursen DT211G, Frontend-baserad webbutveckling.<br>
-        &copy; Copyright Linus Lundgren, 2023.</p>
-</footer>
-   
-<script src="main.js"></script>
+    </div>
+
+    <footer>
+        <p>Laborationsuppgift för kursen DT211G, Frontend-baserad webbutveckling.<br>
+            &copy; Copyright Linus Lundgren, 2023.</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
+
 </html>

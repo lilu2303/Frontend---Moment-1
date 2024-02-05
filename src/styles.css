@@ -76,20 +76,180 @@ nav li {
 
 nav a {
   text-decoration: none; 
-  color: #2C363F; 
+  color: #000000; 
   padding: 0 1em;
 }
 
 nav li:hover {
-  background-color: #666863;
+  background-color: #ffffff;
   cursor: pointer;
+}
+
+/* Meny knapp, Ã¶ppna meny */
+.menu-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: #BBC7A4;
+  border: black solid 1px;
+  cursor: pointer;
+}
+
+.open {
+  margin: 0 1em;
+}
+
+.menu-btn:hover {
+  background-color: #BBC7A4;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+
+.bars {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+.menu-text {
+  font-size: 1.2em;
+  color: black;
+}
+
+/* Meny knapp, stÃ¤ng */
+
+.close {
+  margin: 1em 1.5em;
+  padding: 10px 15px;
+}
+
+/* Roterar tvÃ¥ logrÃ¤ta streck till ett kryss */
+.cross1 {
+  width: 25px;
+  transform: rotate(45deg);
+  position: relative;
+  top: 5px;
+}
+
+.cross2 {
+  width: 25px;
+  transform: rotate(135deg);
+  position: relative;
+  top: -3px;
+}
+
+/* Media queries */
+
+/* Design fÃ¶r stÃ¶rre skÃ¤rmar - gÃ¶r menyn som inline */
+@media only screen and (min-width: 801px) {
+  header {
+      padding: 0 1em;
+  }
+
+  .menu-btn {
+      display: none;
+  }
+
+  #open-menu {
+      display: none !important;
+  }
+  
+  header {
+      position: static;
+  }
+
+  nav {
+      display: block !important;
+      position: static;
+      box-shadow: 0 0px 0px;
+      height: auto;
+      font-size: 1.4em;
+      width: auto;
+  }
+
+  nav ul {
+      height: 100%;
+  }
+
+  nav li {
+      display: inline;
+      padding: 1.2em 0;
+      font-weight: bold;
+      
+  }
+}
+
+picture img {
+width: 100%;
+height: auto;
+}
+
+/* Startsidan */
+
+.products {
+  text-align: center; 
+  padding: 20px; 
+}
+
+.products h1 {
+  padding-bottom: 40px; 
+  padding-top: 40px;
+}
+
+.products img {
+  width: 100%; 
+  max-width: 400px; 
+  margin-bottom: 40px; 
+}
+
+.backgroundpicture {
+  position: relative;
+}
+.backgroundtext {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.backgroundtext h1 {
+  color: #fff;
+  font-size: 42px;
+  text-shadow: 2px 2px 2px #474646;
+  text-align: center;
+}
+.backgroundpicture img {
+  width: 100%;
+  opacity: 0.6;
+}
+
+.button-container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  padding: 8px 50px;
+  border: 6px solid #ffffff;
+  background-color: transparent;
+  font-size: 30px;
+  color: #fff;
+}
+.button-container:hover{
+  background-color: #fefffc;
 }
 
 footer {
   font-family: 'Roboto', sans-serif;
   width: auto;
   color: #2C363F;
-  background-color:#666863;
+  background-color: #666863;
   height: 180px;
   display: flex;
   flex-direction: column;
@@ -106,3 +266,65 @@ footer p {
   line-height: 1.6;
 }
 
+/* Bildsidan */
+
+.picturesection {
+      text-align: center;
+  }
+  
+.picturesection h1, .picturesection h2 {
+      padding-bottom: 20px;
+      padding-top: 50px;
+  }
+  
+.picture1, .picture2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  
+.picture1 img, .picture2 img {
+      width: 100%; 
+      max-width: 550px; 
+      height: auto; 
+      margin: 10px; 
+  }
+
+/* Media query fÃ¶r skÃ¤rmstorlek 801px till 1024px */
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .backgroundtext {
+      position: absolute;
+      top: 40%; 
+      transform: translate(-50%, -50%);
+      text-align: center;
+  }
+
+  .backgroundtext h1 {
+      color: #fff;
+      text-shadow: 2px 2px 2px #474646;
+      font-size: 30px;
+  }
+
+  .button-container {
+      position: absolute;
+      top: 75%; 
+      transform: translate(-50%, -50%);
+  }
+
+  button {
+      padding: 4px 40px; 
+      font-size: 30px; 
+  }
+
+  .picturesection h1, h2 {
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 30px;
+  }
+
+  .picture1, .picture2 {
+      flex-direction: column;
+      align-items: center;
+  }
+}
