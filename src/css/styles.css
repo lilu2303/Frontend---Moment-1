@@ -207,26 +207,6 @@ height: auto;
   margin-bottom: 40px; 
 }
 
-.backgroundpicture {
-  position: relative;
-}
-.backgroundtext {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.backgroundtext h1 {
-  color: #fff;
-  font-size: 42px;
-  text-shadow: 2px 2px 2px #474646;
-  text-align: center;
-}
-.backgroundpicture img {
-  width: 100%;
-  opacity: 0.6;
-}
-
 .button-container {
   position: absolute;
   top: 70%;
@@ -291,6 +271,9 @@ footer p {
       margin: 10px; 
   }
 
+  .about {
+    text-align: center;
+  }
 /* Media query fÃ¶r skÃ¤rmstorlek 801px till 1024px */
 @media screen and (min-width: 801px) and (max-width: 1024px) {
   .backgroundtext {
@@ -327,4 +310,29 @@ footer p {
       flex-direction: column;
       align-items: center;
   }
+}
+
+/* Media query fÃ¶r skÃ¤rmstorlek 800px eller mindre */
+@media screen and (max-width: 800px) {
+  .backgroundtext h1 {
+      font-size: 20px;
+  }
+
+  button {
+      font-size: 20px;
+  }
+
+  .picturesection h1, h2 {
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 30px;
+  }
+
+  .picture1, .picture2 {
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      padding-right: 20px;
+  }
+
 }
