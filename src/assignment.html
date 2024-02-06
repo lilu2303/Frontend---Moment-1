@@ -1,21 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="images/favicon.png">
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Moment 1 - Frontend</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" type="module"></script>
+    <title>Moment 1 - Frontend</title>
+</head>
+
 <body>
-<header>
-        
+    <header>
+
         <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="Logotyp"></a></div>
         <!--Meny knapp för att öppna mobilmenyn-->
         <button class="menu-btn open" id="open-menu">
@@ -32,39 +34,51 @@
             <button class="menu-btn close" id="close-menu">
                 <span class="menu-icon">
                     <span class="bars cross1"></span>
-                    <span class="bars cross2"></span>   
+                    <span class="bars cross2"></span>
                 </span>
                 <span class="menu-text">Stäng</span>
             </button>
             <ul>
                 <li><a href="index.html">STARTSIDA</a></li>
                 <li><a href="pictures.html">BILDER</a></li>
-                <li><a href="assignment.html">UPPGIFTSBESKRIVNING</a></li>
+                <li><a href="assignment.html">UPPGIFT</a></li>
             </ul>
-    </nav>
-</header>
+        </nav>
+    </header>
 
 
-<picture>
-    <source media="(min-width: 1521px)" srcset="images/stor_bild.jpg">
-    <source media="(min-width: 801px) and (max-width: 1520px)" srcset="images/mellan_bild.jpg">
-    <source media="(max-width: 800px)" srcset="images/liten_bild.jpg">
-    <img src="images/stor_bild.jpg" alt="En bild på trädgård täckt med snö när solen skiner">
-  </picture>
+    <picture>
+        <source media="(min-width: 1521px)" srcset="images/stor_bild.jpg">
+        <source media="(min-width: 801px) and (max-width: 1520px)" srcset="images/mellan_bild.jpg">
+        <source media="(max-width: 800px)" srcset="images/liten_bild.jpg">
+        <img src="images/stor_bild.jpg" alt="En bild på trädgård täckt med snö när solen skiner">
+    </picture>
 
     <article class="about">
-            <h1>Om uppgiften</h1>
-            <br>
-            <p>Den här uppgiften var väldigt rolig och utmanande...</p>
+        <h1>Om uppgiften</h1>
+        <p>Den här uppgiften går ut på att jag ska med hjälp av NPM, parcel och Nodejs ska skapa en automatiserad
+            hemsida som uppdateras och laddas upp till Netlify. För att göra så att alla ändringar
+            automatiskt uppateras vid nedsparning i vsc, skapade jag först ett github repo där jag sparade ner alla
+            ändringar av koden i vsc. Och när hemsidan sedan var färdig länkade jag mitt
+            github repo med Netlify där alla ändringar sedan publiceras automatiskt vid uppatering av gitrepot.</p>
+<br>
+<br>
+        <h1>Arbetsprocess</h1>
+        <p>Vid utveckling av hemsidan skriver jag den kod som jag tycker är lämplig för hemsidan och för dess design,
+            och när jag sedan känner färdig öppnar jag komandotolken och skriver "NPM run start"
+            för att starta parcel projektet och testköra arbetet i en så kallad liveserver. Därifrån kan jag sedan göra
+            förbättringar och sedan när jag känner mig nöjd kan jag commita och pusha commitsen
+            till github som sedan är kopplat till Netlify, för att på så sätt automaticera publiceringen av min hemsida.
+        </p>
+        <br> 
+        <br>
         </div>
     </article>
-    
+
     <footer>
         <p>Laborationsuppgift för kursen DT211G, Frontend-baserad webbutveckling.<br>
             &copy; Copyright Linus Lundgren, 2024.</p>
     </footer>
-
-<script src="js/main.js"></script>
 </body>
+
 </html>
-           

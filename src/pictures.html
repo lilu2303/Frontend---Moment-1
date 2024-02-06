@@ -1,21 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="images/favicon.png">
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Moment 1 - Frontend</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" type="module"></script>
+    <title>Moment 1 - Frontend</title>
+</head>
+
 <body>
-<header>
-        
+    <header>
+
         <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="Logotyp"></a></div>
         <!--Meny knapp för att öppna mobilmenyn-->
         <button class="menu-btn open" id="open-menu">
@@ -32,45 +34,54 @@
             <button class="menu-btn close" id="close-menu">
                 <span class="menu-icon">
                     <span class="bars cross1"></span>
-                    <span class="bars cross2"></span>   
+                    <span class="bars cross2"></span>
                 </span>
                 <span class="menu-text">Stäng</span>
             </button>
             <ul>
                 <li><a href="index.html">STARTSIDA</a></li>
                 <li><a href="pictures.html">BILDER</a></li>
-                <li><a href="assignment.html">UPPGIFTSBESKRIVNING</a></li>
+                <li><a href="assignment.html">UPPGIFT</a></li>
             </ul>
-    </nav>
-</header>
+        </nav>
+    </header>
 
 
-<picture>
-    <source media="(min-width: 1521px)" srcset="images/stor_bild.jpg">
-    <source media="(min-width: 801px) and (max-width: 1520px)" srcset="images/mellan_bild.jpg">
-    <source media="(max-width: 800px)" srcset="images/liten_bild.jpg">
-    <img src="images/stor_bild.jpg" alt="En bild på trädgård täckt med snö när solen skiner">
-  </picture>
-
-<section class="picturesection">
-    <h1>Bildsektion</h1>
-    <div class="picture1">
-        <picture>
-        <source srcset="images/" type="image/webp">
-        <img src="images/" alt="">
-    </picture>
     <picture>
-        <source srcset="images/" type="image/webp">
-    <img src="images/" alt="">
-</picture>
-</div>
-</section>
+        <source media="(min-width: 1521px)" srcset="images/stor_bild.jpg">
+        <source media="(min-width: 801px) and (max-width: 1520px)" srcset="images/mellan_bild.jpg">
+        <source media="(max-width: 800px)" srcset="images/liten_bild.jpg">
+        <img src="images/stor_bild.jpg" alt="En bild på trädgård täckt med snö när solen skiner">
+    </picture>
 
-<footer>
-    <p>Laborationsuppgift för kursen DT211G, Frontend-baserad webbutveckling.<br>
-        &copy; Copyright Linus Lundgren, 2024.</p>
-</footer>
+    <section class="picturesection">
+        <h1>Bildsektion</h1>
+        <div class="picture1">
+            <picture>
+                <source srcset="images/5b3oriccmsl61.webp" type="image/webp">
+                <img src="images/5b3oriccmsl61.webp" alt="A picture of a videogame with a guy holding a gun and zombies in front of him">
+            </picture>
+            <picture>
+                <source srcset="images/123.webp" type="image/webp">
+                <img src="images/123.webp" alt="A picture of a videogame with a guy holding a gun and zombies in front of him">
+            </picture>
 
-<script src="js/main.js"></script>
+            <div class="picture2">
+                <picture>
+                    <source srcset="images/maxresdefault.webp" type="image/webp">
+                    <img src="images/maxresdefault.webp" alt="A picture of a skull emblem with the text 125 000xp in 15 minutes above it">
+                </picture>
+                <picture>
+                    <source srcset="images/234-3.webp" type="image/webp">
+                    <img src="images/234-3.webp" alt="A picture of a silver mercedes driving on a road in a videogame with the text afk money after patch above it">
+                </picture>
+            </div>
+    </section>
+
+    <footer>
+        <p>Laborationsuppgift för kursen DT211G, Frontend-baserad webbutveckling.<br>
+            &copy; Copyright Linus Lundgren, 2024.</p>
+    </footer>
 </body>
+
 </html>
