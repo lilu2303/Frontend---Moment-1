@@ -1,5 +1,5 @@
 {
-  "name": "c",
+  "name": "moment1",
   "version": "1.0.0",
   "description": "",
   "author": "Linus Lundgren",
@@ -10,6 +10,30 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "^2.11.0"
+    "parcel": "^2.0.0"
+    
+  },
+  "browserslist": [
+    "> 0.25%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "targets": {
+    "default": {
+      "engines": {
+        "browsers": "> 0.25%, last 2 versions, not dead"
+      }
+    },
+    "imagemin": {
+      "plugins": {
+        "imagemin-webp": {
+          "quality": 75
+        },
+        "imagemin-avif": {
+          "quality": 50
+        }
+      }
+    }
   }
 }
+
