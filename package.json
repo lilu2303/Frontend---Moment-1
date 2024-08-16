@@ -11,24 +11,23 @@
   },
   "devDependencies": {
     "parcel": "^2.0.0"
-    
   },
   "browserslist": [
     "> 0.25%",
     "last 2 versions",
     "not dead"
   ],
-    
-    "imagemin": {
-      "plugins": {
-        "imagemin-webp": {
-          "quality": 75
-        },
-        "imagemin-avif": {
-          "quality": 50
-        }
+  "imagemin": {
+    "plugins": {
+      "imagemin-webp": {
+        "quality": 75
+      },
+      "imagemin-avif": {
+        "quality": 50
       }
     }
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
   }
-
-
+}
