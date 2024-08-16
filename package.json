@@ -18,12 +18,7 @@
     "last 2 versions",
     "not dead"
   ],
-  "targets": {
-    "default": {
-      "engines": {
-        "browsers": "> 0.25%, last 2 versions, not dead"
-      }
-    },
+    
     "imagemin": {
       "plugins": {
         "imagemin-webp": {
@@ -35,5 +30,5 @@
       }
     }
   }
-}
+
 
